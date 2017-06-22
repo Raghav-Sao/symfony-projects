@@ -1,0 +1,4 @@
+services:
+#    eatlo_app.example:
+#        class: Eatlo\AppBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
