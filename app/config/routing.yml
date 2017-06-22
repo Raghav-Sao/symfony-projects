@@ -1,8 +1,7 @@
-eatlo_app:
-    resource: "@EatloAppBundle/Resources/config/routing.yml"
-    prefix:   eatlo/
-    
 
+restaurant_app:
+    resource: "@RestaurantAppBundle/Resources/config/routing.yml"
+    prefix:   /
 app:
     resource: '@AppBundle/Controller/'
     type: annotation

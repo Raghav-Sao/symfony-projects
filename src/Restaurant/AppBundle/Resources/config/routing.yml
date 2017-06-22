@@ -1,0 +1,4 @@
+restaurant_app_homepage:
+    path:     /
+    defaults: { _controller: RestaurantAppBundle:Default:index }
+

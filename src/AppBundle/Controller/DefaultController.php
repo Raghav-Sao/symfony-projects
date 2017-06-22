@@ -71,10 +71,14 @@ class DefaultController extends Controller
     {
         $localityId = (int)$request->get('id');
         $mapper = array(
-            1 => array(1,3,5,8,10,13,15),
-            2 => array(2,4),
-            3 => array(2,6),
-            4 => array(8,9)
+            1 => array(1,22,5,8,13,15),
+            2 => array(2,4,6,11,30),
+            3 => array(7,9,10,27),
+            4 => array(16,19,18),
+            5 => array(20,17,26),
+            6 => array(3,12,21),
+            7 => array(23,14,24),
+            8 => array(25,28,29)
             );
     	$menuList = array(
     		1 => array(
@@ -98,7 +102,7 @@ class DefaultController extends Controller
                 'name' => "Item 3",
                 'type' => 'veg',
                 'price' => '50',
-                'imgurl' => 'img-2.jpg',
+                'imgurl' => 'img-1.jpg',
                 'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
                 ),
             4 => array(
@@ -160,17 +164,17 @@ class DefaultController extends Controller
             11 => array(
                 'id' => '11',
                 'name' => "Item 11",
-                'type' => 'veg',
+                'type' => 'non_veg',
                 'price' => '50',
-                'imgurl' => 'img-1.jpg',
+                'imgurl' => 'img-2.jpg',
                 'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
                 ),
             12 => array(
                 'id' => '12',
                 'name' => "Item 12",
-                'type' => 'veg',
+                'type' => 'non_veg',
                 'price' => '50',
-                'imgurl' => 'img-1.jpg',
+                'imgurl' => 'img-2.jpg',
                 'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
                 ),
             13 => array(
@@ -184,9 +188,9 @@ class DefaultController extends Controller
             14 => array(
                 'id' => '14',
                 'name' => "Item 14",
-                'type' => 'veg',
+                'type' => 'non_veg',
                 'price' => '50',
-                'imgurl' => 'img-1.jpg',
+                'imgurl' => 'img-2.jpg',
                 'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
                 ),
             15 => array(
@@ -208,9 +212,9 @@ class DefaultController extends Controller
             17 => array(
                 'id' => '17',
                 'name' => "Item 17",
-                'type' => 'veg',
+                'type' => 'non_veg',
                 'price' => '50',
-                'imgurl' => 'img-1.jpg',
+                'imgurl' => 'img-2.jpg',
                 'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
                 ),
             18 => array(
@@ -224,14 +228,94 @@ class DefaultController extends Controller
             19 => array(
                 'id' => '19',
                 'name' => "Item 19",
-                'type' => 'veg',
+                'type' => 'non_veg',
                 'price' => '50',
-                'imgurl' => 'img-1.jpg',
+                'imgurl' => 'img-2.jpg',
                 'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
                 ),
             20 => array(
                 'id' => '20',
                 'name' => "Item 20",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            21 => array(
+                'id' => '21',
+                'name' => "Item 21",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            22 => array(
+                'id' => '22',
+                'name' => "Item 22",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            23 => array(
+                'id' => '23',
+                'name' => "Item 23",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            24 => array(
+                'id' => '24',
+                'name' => "Item 24",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            25 => array(
+                'id' => '25',
+                'name' => "Item 25",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            26 => array(
+                'id' => '26',
+                'name' => "Item 26",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            27 => array(
+                'id' => '27',
+                'name' => "Item 27",
+                'type' => 'non_veg',
+                'price' => '50',
+                'imgurl' => 'img-2.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            28 => array(
+                'id' => '28',
+                'name' => "Item 28",
+                'type' => 'non_veg',
+                'price' => '50',
+                'imgurl' => 'img-2.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            29 => array(
+                'id' => '29',
+                'name' => "Item 29",
+                'type' => 'veg',
+                'price' => '50',
+                'imgurl' => 'img-1.jpg',
+                'desc' => 'Your Saturday can\'n get better than this! Masaledaar Kaale Chane and Pooris (4) with delicious Suji Ka Halwa, topped with dry fruits.'
+                ),
+            30 => array(
+                'id' => '30',
+                'name' => "Item 30",
                 'type' => 'veg',
                 'price' => '50',
                 'imgurl' => 'img-1.jpg',

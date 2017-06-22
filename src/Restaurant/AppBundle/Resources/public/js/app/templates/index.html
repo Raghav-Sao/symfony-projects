@@ -1,0 +1,19 @@
+<div class="img-responsive">
+<div id="location-container" class="container-fluid img-responsive menu-type " ng-controller="OutletController as outlet">		
+		<h2 id="location-header">Select Delivery Location</h2>
+		<div id="location">
+			<p ng-repeat="(id,product) in outlet.products"><a ng-click="outlet.selectTab(id,product.name)">{[{product.name}]}</a></p>
+		</div>
+
+</div>
+<div>
+<script>
+	$("#change-outlet").css({'visibility':'hidden'});
+	$("#loc a").css({'color':'#000'});
+	$("#dish a").css({'color':'#FFF'});
+</script>
+
+
+
+     
+

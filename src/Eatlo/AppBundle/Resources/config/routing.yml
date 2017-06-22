@@ -1,4 +1,0 @@
-bus_app_homepage:
-    path:     /
-    defaults: { _controller: EatloAppBundle:Default:index }
-
