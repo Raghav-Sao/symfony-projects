@@ -1,6 +1,6 @@
 eatlo_app:
     resource: "@EatloAppBundle/Resources/config/routing.yml"
-    prefix:   eatlo/
+    prefix:   /
     
 
 app:
